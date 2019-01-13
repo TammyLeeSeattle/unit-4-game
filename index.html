@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fruit Salad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+
+   <div class="container">
+
+    <!-- Game Header -->
+       <div class="jumbotron" style="background-color:rgb(196, 196, 247); color: rgb(4, 28, 83);">
+           <div class="container">
+               <h1>Fruit Salad... the Game.</h1>
+               <p>This is a game where your choices make the difference between a successful fruit salad (yum!) or a bunch of broken fruit.</p>
+           </div>
+       </div>
+
+    <!-- Main Content of Game -->
+       <div class="row">
+
+        <!-- Instructions -->
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><small>To mysterious fruit salad is only achievable when you guess the target score required to make it. There are four fruits below. Each fruit hides a different amount of points that will help you reach your target score -- but there's a catch! You won't know the hidden points until you click on them :)</small></p>
+                        <p><small>Keep clicking on the various fruit to figure the hidden points! Then when you've figured out the value of each fruit, keep clicking until you reach your target score.</small></p>
+                    </div>
+                </div>            
+            </div>
+
+        </div>
+
+    <!-- Scores and Crystals -->
+        <div class="row">
+
+        <!-- Target Score -->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Target Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4 class="text-center" id="targetScore"></h4>                        
+                    </div>
+                </div>
+            </div>
+
+        <!-- Player Score -->
+            <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Your Score</h3>
+                    </div>
+                    <div class="panel-body">
+                        <h4 class="text-center" id="playerScore"></h4>                        
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Fruits to Play and Get Points with (to contribute to Target Score) -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Fruit Choices</h3>
+                    </div> 
+                    <div class="panel-body text-center">
+                        <img src="assets/images/apple.png" alt="apple" id="apple">
+                        <img src="assets/images/avocado.png" alt="avocado" id="avocado">
+                        <img src="assets/images/grapes.png" alt="grapes" id="grapes">
+                        <img src="assets/images/orange.png" alt="orange" id="orange">                      
+                    </div>
+                </div>                
+            </div>
+
+        </div>
+
+    <!-- Wins and Losses Counters -->
+        <div class="row">
+
+        <!-- Wins Counter -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Wins:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="text-center" id="winCount"></h4>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Losses Counter -->
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Losses:</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4 class="text-center" id="lossCount"></h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+   </div>
+
+
+   <!-- jQuery library-->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+   <!-- game logic JS file -->
+   <script src="../unit-4-game/assets/javascript/game.js"></script>
+
+
+</body>
+</html>
